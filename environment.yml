@@ -1,0 +1,15 @@
+# conda env create -f environment.yml -n idr-omero
+name: torch
+channels:
+  - idr
+  - torch
+  - ome
+  - defaults
+  - bioconda
+dependencies:
+  - idr-py
+  - torchvision
+  - pytorch
+  - pip 
+  - pip:
+    - nonechucks
