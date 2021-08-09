@@ -9,7 +9,9 @@ channels:
 dependencies:
   - idr-py
   - torchvision
+  - tensorboard
   - pytorch
+  - matplotlib
   - pip 
   - pip:
     - nonechucks
