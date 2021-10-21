@@ -1,20 +1,23 @@
-# conda env create -f environment.yml -n idr-omero
 name: torch
 channels:
-  - defaults
-  - anaconda
+  - bioconda
   - pytorch
   - idr
   - ome
   - conda-forge
-  - bioconda
+  - defaults
 dependencies:
-  - idr-py
   - torchvision
-  - tensorboard
+  - cudatoolkit=10.2
   - pytorch
-  - pytorch-lightning
   - matplotlib
-  - pip 
-  - pip:
-    - nonechucks
+  - tensorboard
+  - idr-py
+  - pytorch-lightning
+  - pip
+  - scikit-learn
+  - gsutil
+  - dask-image
+  - gcsfs
+  - imageio
+prefix: /home/ctr26/miniconda3/envs/torch
